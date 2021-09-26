@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dicelab.whopuppy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".WhoPuppyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WhoPuppy"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activity.ChattingActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/Theme.WhoPuppy.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ArticleDetailActivity"
+            android:theme="@style/Theme.WhoPuppy.NoActionBar"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".activity.ArticleWriteActivity" />
+        <activity android:name=".activity.ArticleEditActivity" />
+        <activity android:name=".activity.DogImageUploadActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/Theme.WhoPuppy.NoActionBar" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:theme="@style/Theme.WhoPuppy.MaterialComponents" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/Theme.WhoPuppy.MaterialComponents" />
+        <activity
+            android:name=".activity.FindPasswordActivity"
+            android:theme="@style/Theme.WhoPuppy.MaterialComponents" />
+        <activity
+            android:name=".activity.AbandonedAnimalSearchActivity"
+            android:theme="@style/Theme.WhoPuppy.MaterialComponents" />
+        <activity android:name=".activity.AbandonedAnimalDetailActivity" />
+        <activity
+            android:name=".activity.MyInfoEditActivity"
+            android:theme="@style/Theme.WhoPuppy.MaterialComponents.ActionBar" />
+        <activity android:name=".activity.BreedCheckActivity" />
+    </application>
+
+</manifest>
